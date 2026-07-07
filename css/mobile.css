@@ -3,8 +3,29 @@
 /*                 MOBILE NAVBAR                      */
 /* ================================================= */
 
+.menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #c62828;
+}
+
 nav {
     padding: 10px 15px;
+}
+
+.logo img {
+    height: 42px;
+}
+
+.company-name {
+    font-size: 20px;
+}
+
+.company-subtitle {
+    display: none;
 }
 
 .nav-left {
@@ -12,19 +33,6 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-}
-
-.logo img {
-    height: 55px;
-}
-
-.company-name {
-    font-size: 26px;
-}
-
-.company-subtitle {
-    font-size: 12px;
-    line-height: 1.2;
 }
 
 nav ul {
