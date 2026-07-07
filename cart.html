@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- ================================================= -->
+<!--                    PAGE HEAD                      -->
+<!-- ================================================= -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    
+</head>
+<body>
+
+<!-- ================================================= -->
+<!--                    NAVBAR                         -->
+<!-- ================================================= -->
+
+<div id="navbar-container"></div>
+
+<!-- ================================================= -->
+<!--                  CART SECTION                     -->
+<!-- ================================================= -->
+
+<h1 class="cart-title">Shopping Cart</h1>
+
+    <div id="cartItems"></div>
+
+    <!-- ================================================= -->
+    <!--                 ORDER SUMMARY                     -->
+    <!-- ================================================= -->
+
+    <div id="cartSummary">
+
+        <h2>Order Summary</h2>
+
+        <p id="totalProducts">
+            Total Products: 0
+        </p>
+<input
+    type="text"
+    id="customerName"
+    placeholder="Your Name">
+
+<input
+    type="text"
+    id="customerPhone"
+    placeholder="Phone Number">
+
+<input
+    type="text"
+    id="customerCompany"
+    placeholder="Company Name (Optional)">
+
+<br><br>
+
+        <button id="whatsappBtn">
+            Send Order via WhatsApp
+        </button>
+
+    </div>
+
+    <!-- ================================================= -->
+    <!--                  CLEAR CART                       -->
+    <!-- ================================================= -->
+
+    <button id="clearCartBtn">
+        Clear Cart
+    </button>
+
+<!-- ================================================= -->
+<!--                    FOOTER                         -->
+<!-- ================================================= -->
+
+<div id="footer-container"></div>
+<div id="whatsapp-container"></div>
+
+<!-- ================================================= -->
+<!--                  JAVASCRIPT                       -->
+<!-- ================================================= -->
+
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

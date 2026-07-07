@@ -1,0 +1,22 @@
+{
+  "company": {
+    "name": "Red Dragon",
+    "phone": "+9647515933499",
+    "email": "",
+    "address": ""
+  },
+
+  "website": {
+    "language": "en",
+    "currency": "USD"
+  },
+
+  "cart": {
+    "enabled": true,
+    "whatsappOrders": true
+  },
+
+  "admin": {
+    "enabled": false
+  }
+}

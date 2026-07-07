@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ================================================= -->
+<!--                    PAGE HEAD                      -->
+<!-- ================================================= -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Red Dragon</title>
+
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/product-details.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    
+</head>
+<body>
+
+<!-- ================================================= -->
+<!--                    NAVBAR                         -->
+<!-- ================================================= -->
+
+<div id="navbar-container"></div>
+
+<!-- ================================================= -->
+<!--                 PRODUCT DETAILS                   -->
+<!-- ================================================= -->
+
+<section>
+
+    <a href="products.html" class="back-btn">
+        ← Back to Products
+    </a>
+
+    <div class="product-details">
+
+        <div class="product-gallery">
+
+            <img id="mainImage"
+                 class="main-product-image"
+                 src="">
+
+            <div id="thumbnails"
+                 class="thumbnail-container">
+
+            </div>
+
+        </div>
+
+        <div class="product-info">
+
+            <h1 id="productName"></h1>
+            <select id="productOption" style="display:none;">
+                <option value="100KG">100KG Drum</option>
+                <option value="50KG">50KG Drum</option>
+            </select>
+
+            <div class="quantity-selector">
+                <button id="minusBtn">-</button>
+
+                <span id="quantity">1</span>
+
+                <button id="plusBtn">+</button>
+            </div>
+
+            <a id="orderBtn" class="products-btn">
+                Request Product
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!--                    FOOTER                         -->
+<!-- ================================================= -->
+
+<div id="footer-container"></div>
+<div id="whatsapp-container"></div>
+
+<script src="js/products.js"></script>
+<script src="js/product-details.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

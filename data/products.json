@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "id": "calcium-carbide",
+      "name": "Calcium Carbide",
+      "category": "chemicals",
+      "images": [
+        "images/W_D.JPG",
+        "images/W_D_S.JPG",
+        "images/Various sizes of carbon stone.JPG"
+      ],
+      "description": "High-quality calcium carbide for acetylene gas production."
+    }
+  ]
+}

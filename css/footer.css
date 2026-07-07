@@ -1,0 +1,19 @@
+/* ================================================= */
+/*                      FOOTER                        */
+/* ================================================= */
+
+footer {
+    background-color: #8b1c1c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 14px;
+}

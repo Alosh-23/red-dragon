@@ -1,0 +1,155 @@
+/* ================================================= */
+/*                    NAVBAR                          */
+/* ================================================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 50px;
+
+    background-color: #fff0f0;
+
+    border-bottom: 1px solid #d8bcbc;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ================================================= */
+/*                 NAVBAR LEFT SIDE                   */
+/* ================================================= */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 75px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name {
+    margin: 0;
+
+    font-family: "RedDragonFont";
+
+    color: #c62828;
+
+    font-size: 48px;
+
+    font-weight: normal;
+}
+
+.company-subtitle {
+    margin: 4px 0 0 4px;
+
+    font-family: "RedDragonFont";
+
+    color: #353131;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    text-align: center;
+}
+
+/* ================================================= */
+/*                NAVBAR RIGHT SIDE                   */
+/* ================================================= */
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ================================================= */
+/*                  NAVIGATION MENU                   */
+/* ================================================= */
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #333333;
+
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c62828;
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #c62828;
+
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ================================================= */
+/*                LANGUAGE SWITCHER                   */
+/* ================================================= */
+
+.language-switcher {
+    margin-top: 8px;
+
+    text-align: center;
+
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.language-switcher a {
+    text-decoration: none;
+
+    color: #7a1f1f;
+
+    margin: 0 3px;
+}
+
+.language-switcher a:hover {
+    color: #c62828;
+}

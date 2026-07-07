@@ -1,0 +1,292 @@
+/* ================================================= */
+/*                    CART PAGE                       */
+/* ================================================= */
+
+#cartItems {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* ================================================= */
+/*                    CART ITEM                       */
+/* ================================================= */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: white;
+    border-radius: 15px;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    border-left: 5px solid #8b1c1c;
+}
+
+/* ================================================= */
+/*                  CART IMAGE                        */
+/* ================================================= */
+
+.cart-image {
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-right: 20px;
+
+    border: 1px solid #ddd;
+}
+
+/* ================================================= */
+/*                   CART INFO                        */
+/* ================================================= */
+
+.cart-info {
+    flex: 1;
+}
+
+.cart-item h3 {
+    margin-bottom: 10px;
+
+    color: #d60000;
+
+    font-size: 22px;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* ================================================= */
+/*                 CART ACTIONS                       */
+/* ================================================= */
+
+.cart-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.cart-actions button {
+    min-width: 45px;
+}
+
+/* ================================================= */
+/*                CART BUTTONS                        */
+/* ================================================= */
+
+.cart-item button {
+    margin-top: 10px;
+    margin-right: 8px;
+
+    padding: 8px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* زر + */
+
+.cart-item button:nth-of-type(1) {
+    background: #28a745;
+    color: white;
+}
+
+/* زر - */
+
+.cart-item button:nth-of-type(2) {
+    background: #ffc107;
+    color: black;
+}
+
+/* زر حذف */
+
+.cart-item button:nth-of-type(3) {
+    background: #dc3545;
+    color: white;
+}
+
+.cart-item button:hover {
+    transform: scale(1.05);
+}
+
+/* ================================================= */
+/*                 CART SUMMARY                       */
+/* ================================================= */
+
+#cartSummary {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    border-top: 4px solid #8b1c1c;
+
+}
+
+#cartSummary h2 {
+    color: #d60000;
+    margin-bottom: 10px;
+}
+
+#cartSummary p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ================================================= */
+/*               WHATSAPP BUTTON                      */
+/* ================================================= */
+
+#whatsappBtn {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #25D366;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-shadow: 0 6px 18px rgba(37,211,102,0.25);
+}
+
+#whatsappBtn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(37,211,102,0.35);
+}
+
+/* ================================================= */
+/*                CLEAR CART BUTTON                   */
+/* ================================================= */
+
+#clearCartBtn {
+    display: block;
+
+    margin: 30px auto;
+
+    background: #d60000;
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    #clearCartBtn:hover {
+
+    background: #b30000;
+
+    transform: translateY(-2px);
+
+}
+}
+
+/* ================================================= */
+/*              CUSTOMER INPUTS                      */
+/* ================================================= */
+
+#customerName,
+#customerPhone,
+#customerCompany {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    margin: 10px 0;
+
+    border: 2px solid #e5e5e5;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+
+    outline: none;
+
+    background: #fafafa;
+}
+
+#customerName:focus,
+#customerPhone:focus,
+#customerCompany:focus {
+
+    border-color: #8b1c1c;
+
+    background: white;
+
+    box-shadow: 0 0 12px rgba(139,28,28,0.15);
+}
+
+/* ================================================= */
+/*                    CART TITLE                      */
+/* ================================================= */
+
+.cart-title {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    font-size: 42px;
+
+    font-family: 'Cinzel', serif;
+
+    color: #8b1c1c;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-shadow: 0 2px 8px rgba(139,28,28,0.15);
+}

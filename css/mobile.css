@@ -1,0 +1,127 @@
+@media screen and (max-width: 768px) {
+/* ================================================= */
+/*                 MOBILE NAVBAR                      */
+/* ================================================= */
+
+nav {
+    padding: 10px 15px;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.company-name {
+    font-size: 26px;
+}
+
+.company-subtitle {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+nav ul {
+    margin-top: 10px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 16px;
+}
+
+.language-switcher {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* ================================================= */
+/*                  MOBILE HOME                       */
+/* ================================================= */
+
+.hero-logo {
+    width: 180px;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+}
+
+.hero p {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.about-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px 15px;
+}
+
+.about-box,
+.contact-box {
+    flex: 1;
+}
+
+.about-box h2,
+.contact-box h2 {
+    font-size: 22px;
+}
+
+.about-box p,
+.contact-box p {
+    font-size: 14px;
+}
+
+/* ================================================= */
+/*               MOBILE PRODUCTS                      */
+/* ================================================= */
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-card {
+    width: 165px;
+}
+
+.product-card img {
+    height: 140px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+}
+
+.product-card p {
+    font-size: 12px;
+}
+
+/* ================================================= */
+/*            MOBILE PRODUCT DETAILS                  */
+/* ================================================= */
+
+.product-details {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+
+.main-product-image {
+    width: 100%;
+    max-width: 280px;
+}
+}
