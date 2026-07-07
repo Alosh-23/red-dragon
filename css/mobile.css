@@ -47,6 +47,10 @@ nav a {
 /*                  MOBILE HOME                       */
 /* ================================================= */
 
+.hero {
+    height: 50vh;
+}
+
 .hero-logo {
     width: 180px;
 }
