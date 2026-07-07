@@ -48,7 +48,9 @@ nav a {
 /* ================================================= */
 
 .hero {
-    height: 50vh;
+    height: auto;
+    min-height: 350px;
+    padding: 40px 15px;
 }
 
 .hero-logo {
@@ -66,8 +68,8 @@ nav a {
 
 .about-contact {
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    flex-direction: column;
+    gap: 30px;
     padding: 20px 15px;
 }
 

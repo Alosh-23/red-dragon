@@ -68,7 +68,7 @@ const FILES_TO_CACHE = [
     "./images/ordinary protective helmet.JPG",
     "./images/P_B.JPG",
     "./images/protective goggles.JPG",
-    "./images/RDR_WWW_logo.JPG",
+    "./images/RDR_WWW_logo.PNG",
     "./images/Various sizes of carbon stone.JPG",
     "./images/W_D.JPG",
     "./images/W_D_S.JPG",
