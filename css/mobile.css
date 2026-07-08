@@ -13,6 +13,10 @@
     cursor:pointer;
 }
 
+.nav-right{
+    display:none;
+}
+
 nav {
     padding: 10px 15px;
 }
@@ -34,10 +38,6 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-}
-
-.nav-right{
-    display:none;
 }
 
 nav ul {
