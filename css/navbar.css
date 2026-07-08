@@ -153,3 +153,7 @@ nav a:hover::after {
 .language-switcher a:hover {
     color: #c62828;
 }
+
+.menu-toggle {
+    display: none;
+}
