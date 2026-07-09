@@ -34,9 +34,7 @@ nav {
 }
 
 .company-subtitle {
-    display: block;
-    font-size: 9px;
-    line-height: 1.2;
+    display: none;
 }
 
 .nav-left {
@@ -80,6 +78,14 @@ nav a {
 }
 
 .mobile-company-full{
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    line-height:1.5;
+    margin-bottom:15px;
+}
+
+.mobile-company-full-ar{
     display:block;
     font-size:14px;
     font-weight:bold;
