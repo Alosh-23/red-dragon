@@ -3,7 +3,7 @@
 // Version 1
 // =================================================
 
-const CACHE_NAME = "red-dragon-v6";
+const CACHE_NAME = "red-dragon-v7";
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
