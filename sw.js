@@ -82,9 +82,9 @@ const FILES_TO_CACHE = [
     "./images/icon-192.JPG",
     "./images/icon-500.png",
 
-    "favicon.ico",
+    "./favicon.ico",
     
-    "assets/fonts/SCRIPTBL.TTF",
+    "./assets/fonts/SCRIPTBL.TTF",
 
 ];
 
