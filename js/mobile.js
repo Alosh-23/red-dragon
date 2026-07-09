@@ -35,3 +35,25 @@ window.addEventListener("resize", () => {
     );
 
 });
+
+/* ================================================= */
+/*                MOBILE MENU                        */
+/* ================================================= */
+
+document.addEventListener("click", (event) => {
+
+    const button =
+        document.querySelector(".menu-toggle");
+
+    const menu =
+        document.querySelector(".mobile-menu");
+
+    if (!button || !menu) return;
+
+    if (event.target === button) {
+
+        menu.classList.toggle("active");
+
+    }
+
+});
