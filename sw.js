@@ -81,6 +81,8 @@ const FILES_TO_CACHE = [
 
     "./icon-192.JPG",
     "./icon-500.png",
+
+    "./favicon.ico",
     
     "./assets/fonts/SCRIPTBL.TTF",
 
