@@ -165,7 +165,7 @@ const products = {
     "protective-goggles": {
         name: "نظارات واقية",
         images: [
-            "../images/Protective goggles.JPG"
+            "../images/protective goggles.JPG"
         ]
     },
 
@@ -183,14 +183,14 @@ const products = {
     "ordinary-protective-helmet": {
         name: "خوذة حماية عادية",
         images: [
-            "../images/ordinary Protective Helmet.JPG"
+            "../images/ordinary protective helmet.JPG"
         ]
     },
 
     "electronic-protective-helmet": {
         name: "خوذة حماية إلكترونية",
         images: [
-            "../images/Electronic Protective Helmet.JPG"
+            "../images/Electronic protective helmet.JPG"
         ]
     },
 

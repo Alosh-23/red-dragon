@@ -183,14 +183,14 @@ const products = {
     "ordinary-protective-helmet": {
         name: "Ordinary Protective Helmet",
         images: [
-            "images/ordinary Protective Helmet.JPG"
+            "images/ordinary protective helmet.JPG"
         ]
     },
 
     "electronic-protective-helmet": {
         name: "Electronic Protective Helmet",
         images: [
-            "images/Electronic Protective Helmet.JPG"
+            "images/Electronic protective helmet.JPG"
         ]
     },
 
