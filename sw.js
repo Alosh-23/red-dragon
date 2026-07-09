@@ -2,8 +2,7 @@
 // Red Dragon Service Worker
 // Version 1
 // =================================================
-
-const CACHE_NAME = "red-dragon-v7";
+const CACHE_NAME = "red-dragon-v8";
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
@@ -86,6 +85,9 @@ const FILES_TO_CACHE = [
 ];
 
 self.addEventListener("install", (event) => {
+
+    self.skipWaiting();
+
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
             return cache.addAll(FILES_TO_CACHE);
@@ -110,6 +112,7 @@ self.addEventListener("fetch", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
+
     event.waitUntil(
         caches.keys().then((cacheNames) => {
             return Promise.all(
@@ -121,4 +124,7 @@ self.addEventListener("activate", (event) => {
             );
         })
     );
+
+    clients.claim();
+
 });
