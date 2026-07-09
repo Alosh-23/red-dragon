@@ -79,12 +79,12 @@ const FILES_TO_CACHE = [
     "./images/Electrode Holder(DSC_6403).JPG",
     "./images/Electronic protective helmet.JPG",
 
-    "./icon-192.JPG",
-    "./icon-500.png",
+    "./images/icon-192.JPG",
+    "./images/icon-500.png",
 
-    "./favicon.ico",
+    "favicon.ico",
     
-    "./assets/fonts/SCRIPTBL.TTF",
+    "assets/fonts/SCRIPTBL.TTF",
 
 ];
 
