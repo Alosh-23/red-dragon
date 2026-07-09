@@ -165,7 +165,7 @@ const products = {
     "protective-goggles": {
         name: "Protective Goggles",
         images: [
-            "images/Protective goggles.JPG"
+            "images/protective goggles.JPG"
         ]
     },
 

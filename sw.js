@@ -78,9 +78,11 @@ const FILES_TO_CACHE = [
     "./images/Earth Clamps(DSC_6400).JPG",
     "./images/Electrode Holder(DSC_6403).JPG",
     "./images/Electronic protective helmet.JPG",
-   
-    "assets/fonts/SCRIPTBL.TTF",
 
+    "./icon-192.JPG",
+    "./icon-500.png",
+    
+    "./assets/fonts/SCRIPTBL.TTF",
 
 ];
 
