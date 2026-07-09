@@ -9,6 +9,9 @@ const FILES_TO_CACHE = [
     "./products.html",
     "./product.html",
     "./cart.html",
+    
+    "./favicon.ico",
+    
 
     "./manifest.json",
 
@@ -82,8 +85,6 @@ const FILES_TO_CACHE = [
     "./images/icon-192.JPG",
     "./images/icon-500.png",
 
-    "./favicon.ico",
-    
     "./assets/fonts/SCRIPTBL.TTF",
 
 ];
