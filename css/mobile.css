@@ -34,7 +34,9 @@ nav {
 }
 
 .company-subtitle {
-    display: none;
+    display: block;
+    font-size: 9px;
+    line-height: 1.2;
 }
 
 .nav-left {
@@ -75,6 +77,14 @@ nav a {
 
 .hero h1 {
     font-size: 1.8rem;
+}
+
+.mobile-company-full{
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    line-height:1.5;
+    margin-bottom:15px;
 }
 
 .hero p {

@@ -125,3 +125,7 @@
 
     z-index: 999;
 }
+
+.mobile-company-full{
+    display:none;
+}
