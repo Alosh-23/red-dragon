@@ -3,14 +3,14 @@
 /*                 MOBILE NAVBAR                      */
 /* ================================================= */
 
-.menu-toggle{
-    display:block;
-    margin-left:auto;
-    font-size:28px;
-    border:none;
-    background:none;
-    color:#c62828;
-    cursor:pointer;
+.menu-toggle {
+    display: block;
+    margin-left: auto;
+    font-size: 32px;
+    border: none;
+    background: none;
+    color: #c62828;
+    cursor: pointer;
 }
 
 .nav-right{
@@ -35,9 +35,8 @@ nav {
 
 .nav-left {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    width: 100%;
 }
 
 nav ul {
