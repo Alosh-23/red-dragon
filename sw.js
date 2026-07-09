@@ -90,13 +90,30 @@ const FILES_TO_CACHE = [
 
 self.addEventListener("install", (event) => {
 
-    self.skipWaiting();
-
     event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(FILES_TO_CACHE);
+
+        caches.open(CACHE_NAME).then(async (cache) => {
+
+            for (const file of FILES_TO_CACHE) {
+
+                try {
+
+                    await cache.add(file);
+
+                    console.log("Cached:", file);
+
+                } catch (error) {
+
+                    console.error("Failed:", file);
+
+                }
+
+            }
+
         })
+
     );
+
 });
 
 self.addEventListener("fetch", (event) => {
