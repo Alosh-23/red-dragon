@@ -77,6 +77,21 @@ nav a {
     font-size: 1.8rem;
 }
 
+.mobile-company-full{
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    line-height:1.5;
+    margin-bottom:15px;
+}
+
+.mobile-company-full-ar{
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    line-height:1.5;
+    margin-bottom:15px;
+}
 
 .hero p {
     font-size: 15px;
