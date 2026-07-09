@@ -144,6 +144,6 @@ self.addEventListener("activate", (event) => {
         })
     );
 
-    clients.claim();
-
+    self.clients.claim();
+    
 });
