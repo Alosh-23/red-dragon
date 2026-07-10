@@ -44,6 +44,8 @@ const FILES_TO_CACHE = [
     "./components/footer.html",
     "./components/footer_ar.html",
     "./components/navbar.html",
+    "./components/navbar_mobile.html",
+    "./components/navbar_mobile_ar.html",
     "./components/navbar_ar.html",
     "./components/whatsapp.html",
 
