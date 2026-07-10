@@ -41,12 +41,12 @@ nav {
 
 .nav-left{
     display:flex;
-    align-items: center;
+    align-items:center;
     gap:10px;
 }
 
 .company-info{
-    flex:1;
+    flex:none;
 }
 
 /* ================================================= */
