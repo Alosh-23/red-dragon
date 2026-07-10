@@ -5,15 +5,14 @@
 const CACHE_NAME = "red-dragon-v11"
 const FILES_TO_CACHE = [
     "./",
-    "./index.html",
-    "./products.html",
-    "./product.html",
-    "./cart.html",
-    
-    "./favicon.ico",
-    
+    "./company-site/index.html",
+    "./company-site/products.html",
+    "./company-site/product.html",
+    "./company-site/cart.html",
 
-    "./manifest.json",
+    "./company-site/favicon.ico",
+    
+    "./company-site/manifest.json",
 
     "./arabic_html/ar_index.html",
     "./arabic_html/ar_products.html",
