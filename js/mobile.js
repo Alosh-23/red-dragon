@@ -54,7 +54,15 @@ function initializeMobileMenu() {
 
     button.onclick = () => {
 
-        menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+
+            menu.classList.remove("active");
+
+        } else {
+
+            menu.classList.add("active");
+
+        }
 
     };
 
