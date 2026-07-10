@@ -45,20 +45,8 @@ nav {
     width: 100%;
 }
 
-nav ul {
-    margin-top: 10px;
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-nav a {
-    font-size: 16px;
-}
-
-.language-switcher {
-    margin-top: 5px;
-    font-size: 12px;
+.company-info{
+    flex:1;
 }
 
 /* ================================================= */
@@ -161,6 +149,7 @@ nav a {
     box-shadow:0 5px 20px rgba(0,0,0,0.15);
     padding:15px;
     z-index:9999;
+    overflow:hidden;
 }
 
 .mobile-menu.active{
