@@ -5,7 +5,7 @@
 
 .menu-toggle{
     display:block;
-    margin-left:auto;
+     margin-inline-start:auto;
     font-size:26px;
     border:none;
     background:none;
@@ -46,7 +46,7 @@ nav {
 }
 
 .company-info{
-    flex:none;
+    flex: 1;
 }
 
 /* ================================================= */
