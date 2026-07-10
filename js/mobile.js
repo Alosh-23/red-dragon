@@ -44,15 +44,22 @@ window.addEventListener("resize", () => {
 
 function initializeMobileMenu() {
 
+    console.log("Mobile Menu Initialized");
+
     const button =
         document.querySelector(".menu-toggle");
 
     const menu =
         document.querySelector(".mobile-menu");
 
+    console.log(button);
+    console.log(menu);
+
     if (!button || !menu) return;
 
     button.addEventListener("click", () => {
+
+        console.log("Button Clicked");
 
         menu.classList.toggle("active");
 
