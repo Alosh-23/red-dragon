@@ -60,11 +60,15 @@ function updateCartCounter() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    const isMobile = window.innerWidth <= 768;
+
     if (document.documentElement.lang === "ar") {
 
         loadComponent(
             "navbar-container",
-            "../components/navbar_ar.html"
+            isMobile
+                ? "../components/navbar_mobile_ar.html"
+                : "../components/navbar_ar.html"
         );
 
         loadComponent(
@@ -81,7 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         loadComponent(
             "navbar-container",
-            "components/navbar.html"
+            isMobile
+                ? "components/navbar_mobile.html"
+                : "components/navbar.html"
         );
 
         loadComponent(
