@@ -65,6 +65,25 @@ function initializeMobileMenu() {
             menu.classList.add("active");
 
         }
+        
+        const links = menu.querySelectorAll("a");
+
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                menu.classList.remove("active");
+            });
+        });
+
+        document.addEventListener("click", (event) => {
+
+            if (
+                !menu.contains(event.target) &&
+                !button.contains(event.target)
+            ) {
+                menu.classList.remove("active");
+            }
+
+        });
 
     };
 
