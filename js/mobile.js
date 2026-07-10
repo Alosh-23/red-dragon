@@ -1,18 +1,14 @@
 console.log("mobile.js loaded");
 
 /* ================================================= */
-/*                MOBILE FUNCTIONS                   */
-/* ================================================= */
-
-/* ================================================= */
-/*             DEVICE DETECTION                      */
+/*             DEVICE DETECTION                       */
 /* ================================================= */
 
 const isMobile =
     window.innerWidth <= 768;
 
 /* ================================================= */
-/*              SCREEN INFO                          */
+/*               SCREEN INFO                          */
 /* ================================================= */
 
 if (isMobile) {
@@ -26,7 +22,7 @@ if (isMobile) {
 }
 
 /* ================================================= */
-/*               WINDOW RESIZE                       */
+/*              WINDOW RESIZE                         */
 /* ================================================= */
 
 window.addEventListener("resize", () => {
@@ -39,7 +35,7 @@ window.addEventListener("resize", () => {
 });
 
 /* ================================================= */
-/*                MOBILE MENU                        */
+/*               MOBILE MENU                          */
 /* ================================================= */
 
 function initializeMobileMenu() {
@@ -52,39 +48,42 @@ function initializeMobileMenu() {
 
     if (!button || !menu) return;
 
-    button.onclick = () => {
+    // فتح وإغلاق القائمة
+    button.onclick = (event) => {
+
+        event.stopPropagation();
 
         console.log("Clicked");
 
-        if (menu.classList.contains("active")) {
+        menu.classList.toggle("active");
+
+    };
+
+    // إغلاق القائمة عند الضغط على رابط
+    const links = menu.querySelectorAll("a");
+
+    links.forEach(link => {
+
+        link.addEventListener("click", () => {
 
             menu.classList.remove("active");
 
-        } else {
-
-            menu.classList.add("active");
-
-        }
-        
-        const links = menu.querySelectorAll("a");
-
-        links.forEach(link => {
-            link.addEventListener("click", () => {
-                menu.classList.remove("active");
-            });
         });
 
-        document.addEventListener("click", (event) => {
+    });
 
-            if (
-                !menu.contains(event.target) &&
-                !button.contains(event.target)
-            ) {
-                menu.classList.remove("active");
-            }
+    // منع الضغط داخل القائمة من إغلاقها
+    menu.addEventListener("click", (event) => {
 
-        });
+        event.stopPropagation();
 
-    };
+    });
+
+    // إغلاق القائمة عند الضغط خارجها
+    document.addEventListener("click", () => {
+
+        menu.classList.remove("active");
+
+    });
 
 }
