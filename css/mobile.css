@@ -139,7 +139,7 @@ nav {
 }
 
 .mobile-menu{
-    display:block;
+    display:none;
     position:absolute;
     top:70px;
     right:15px;
