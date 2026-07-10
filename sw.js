@@ -82,7 +82,7 @@ const FILES_TO_CACHE = [
     "./images/Electronic protective helmet.JPG",
 
     "./images/icon-192.JPG",
-    "./images/icon-500.png",
+    "./images/icon-512.png",
 
     "./assets/fonts/SCRIPTBL.TTF",
 

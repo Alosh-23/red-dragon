@@ -2,10 +2,12 @@
   "name": "Red Dragon",
   "short_name": "Red Dragon",
 
+  "lang": "en",
+  "dir": "ltr",
+
   "id": "/red-dragon/",
   "scope": "/red-dragon/",
-
-  "start_url": "/red-dragon/index.html",
+  "start_url": "/red-dragon/",
 
   "display": "standalone",
   "orientation": "portrait",
@@ -20,8 +22,8 @@
       "type": "image/jpeg"
     },
     {
-      "src": "images/icon-500.png",
-      "sizes": "500x500",
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
