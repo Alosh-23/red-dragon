@@ -2,7 +2,7 @@
 // Red Dragon Service Worker
 // Version 1
 // =================================================
-const CACHE_NAME = "red-dragon-v12"
+const CACHE_NAME = "red-dragon-v13"
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
