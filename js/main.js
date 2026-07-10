@@ -18,6 +18,10 @@ async function loadComponent(containerId, filePath) {
 
     updateCartCounter();
 
+    if (typeof initializeMobileMenu === "function") {
+        initializeMobileMenu();
+    }
+
 }
 
 /* ================================================= */

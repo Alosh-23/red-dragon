@@ -40,7 +40,7 @@ window.addEventListener("resize", () => {
 /*                MOBILE MENU                        */
 /* ================================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+function initializeMobileMenu() {
 
     const button =
         document.querySelector(".menu-toggle");
@@ -56,4 +56,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-});
+}
