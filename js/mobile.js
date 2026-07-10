@@ -54,6 +54,8 @@ function initializeMobileMenu() {
 
     button.onclick = () => {
 
+        console.log("Clicked");
+
         if (menu.classList.contains("active")) {
 
             menu.classList.remove("active");
