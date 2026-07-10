@@ -9,9 +9,7 @@ const FILES_TO_CACHE = [
     "./products.html",
     "./product.html",
     "./cart.html",
-
     "./favicon.ico",
-    
     "./manifest.json",
 
     "./arabic_html/ar_index.html",
