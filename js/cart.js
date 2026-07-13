@@ -281,10 +281,8 @@ message +=
 /*               SEND TO WHATSAPP                    */
 /* ================================================= */
 
-    window.open(
+    window.location.href =
     "https://wa.me/9647515933499?text=" +
-    encodeURIComponent(message),
-    "_blank"
-);
+    encodeURIComponent(message);
 
 });
