@@ -108,7 +108,11 @@ if (product) {
                 productKey === "calcium-carbide"
                     ? document.getElementById("productOption").value
                     : "",
-            quantity: quantity
+            quantity: quantity,
+            packSize:
+                productKey === "copper-wire"
+                ? 5
+                : null
         });
 
         localStorage.setItem(
