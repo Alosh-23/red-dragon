@@ -111,9 +111,12 @@ if (product) {
                     : "",
             quantity: quantity,
             packSize:
-                productKey === "copper-wire"
-                ? 5
-                : null
+                (
+                    productKey === "copper-wire" ||
+                    productKey === "aluminum-wire"
+                )
+                    ? 5
+                    : null
         });
 
         localStorage.setItem(
