@@ -96,7 +96,7 @@ if (product) {
         .addEventListener("click", () => {
 
         const quantity =
-            document.getElementById("quantity").textContent;
+        document.getElementById("quantity").value;
 
         let cart =
             JSON.parse(localStorage.getItem("cart")) || [];
@@ -119,34 +119,3 @@ if (product) {
     });   
     
 }
-
-/* ================================================= */
-/*            QUANTITY SELECTOR SYSTEM               */
-/* ================================================= */
-
-let quantity = 1;
-
-const quantityElement =
-    document.getElementById("quantity");
-
-document.getElementById("plusBtn")
-    .addEventListener("click", () => {
-
-    quantity++;
-
-    quantityElement.textContent = quantity;
-
-});
-
-document.getElementById("minusBtn")
-    .addEventListener("click", () => {
-
-    if (quantity > 1) {
-
-        quantity--;
-
-        quantityElement.textContent = quantity;
-
-    }
-
-});
