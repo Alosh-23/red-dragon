@@ -111,10 +111,8 @@ if (product) {
                     : "",
             quantity: quantity,
             packSize:
-                (
                     productKey === "copper-wire" ||
                     productKey === "aluminum-wire"
-                )
                     ? 5
                     : null
         });
