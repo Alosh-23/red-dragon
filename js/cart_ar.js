@@ -152,9 +152,18 @@ cart.forEach((item, index) => {
 
             ${item.option ? `<p>الحجم: ${item.option}</p>` : ""}
 
+            ${item.packSize
+            ? `
+            <p>حجم الرزمة: ${item.packSize} كغم</p>
+            <p>الكمية: ${item.quantity} رزم</p>
+            <p>الوزن الكلي: ${item.quantity * item.packSize} كغم</p>
+            `
+            : `
             <p class="qty-text">
                 الكمية: ${item.quantity}
             </p>
+            `
+            }
 
         </div>
 
@@ -266,10 +275,29 @@ cart.forEach(item => {
 
     }
 
+    if (item.packSize) {
+
+    message +=
+        " حجم الرزمة: " +
+        item.packSize +
+        " كغم\n" +
+
+        " الكمية: " +
+        item.quantity +
+        " رزم\n" +
+
+        " الوزن الكلي: " +
+        (item.quantity * item.packSize) +
+        " كغم\n\n";
+
+} else {
+
     message +=
         " الكمية: " +
         item.quantity +
         "\n\n";
+
+}
 
 });
 

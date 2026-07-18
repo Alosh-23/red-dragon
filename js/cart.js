@@ -151,9 +151,18 @@ cart.forEach((item, index) => {
 
             ${item.option ? `<p>Size: ${item.option}</p>` : ""}
 
+            ${item.packSize
+            ? `
+            <p>Pack Size: ${item.packSize} KG</p>
+            <p>Quantity: ${item.quantity} Packs</p>
+            <p>Total Weight: ${item.quantity * item.packSize} KG</p>
+            `
+            : `
             <p class="qty-text">
                 Quantity: ${item.quantity}
-            </p>
+            </p> 
+            `
+            }
 
         </div>
 
@@ -262,10 +271,29 @@ cart.forEach(item => {
 
     }
 
+    if (item.packSize) {
+
+    message +=
+        " Pack Size: " +
+        item.packSize +
+        " KG\n" +
+
+        " Quantity: " +
+        item.quantity +
+        " Packs\n" +
+
+        " Total Weight: " +
+        (item.quantity * item.packSize) +
+        " KG\n\n";
+
+} else {
+
     message +=
         " Quantity: " +
         item.quantity +
         "\n\n";
+
+}
 
 });
 
