@@ -158,6 +158,12 @@ cart.forEach((item, index) => {
             <p>الكمية: ${item.quantity} رزم</p>
             <p>الوزن الكلي: ${item.quantity * item.packSize} كغم</p>
             `
+            : item.unitType === "dozen"
+            ? `
+            <p>نوع البيع: درزن</p>
+            <p>الكمية: ${item.quantity} درازن</p>
+            <p>إجمالي الأزواج: ${item.quantity * item.unitSize} زوج</p>
+            `
             : `
             <p class="qty-text">
                 الكمية: ${item.quantity}
@@ -275,7 +281,7 @@ cart.forEach(item => {
 
     }
 
-    if (item.packSize) {
+if (item.packSize) {
 
     message +=
         " حجم الرزمة: " +
@@ -289,6 +295,19 @@ cart.forEach(item => {
         " الوزن الكلي: " +
         (item.quantity * item.packSize) +
         " كغم\n\n";
+
+} else if (item.unitType === "dozen") {
+
+    message +=
+        " نوع البيع: درزن\n" +
+
+        " الكمية: " +
+        item.quantity +
+        " درازن\n" +
+
+        " إجمالي الأزواج: " +
+        (item.quantity * item.unitSize) +
+        " زوج\n\n";
 
 } else {
 
