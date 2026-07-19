@@ -40,13 +40,15 @@ nav {
 .company-name {
     margin: 0;
 
-    font-family: "RedDragonFont";
+    font-family: 'Cinzel', serif;
 
     color: #c62828;
 
     font-size: 48px;
 
-    font-weight: normal;
+    font-weight: 700;
+
+    letter-spacing: 2px;
 }
 
 .company-subtitle {
