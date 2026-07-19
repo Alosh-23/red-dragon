@@ -1,0 +1,19 @@
+/* ================================================= */
+/*                 ARABIC VERSION                    */
+/* ================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+.company-name {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+.company-subtitle {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
