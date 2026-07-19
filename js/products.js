@@ -30,6 +30,8 @@ const products = {
 
     "copper-wire": {
         name: "Copper Wire",
+        packType: "kg-pack",
+        packSize: 5,
         images: [
             "images/Copper Wire.JPG"
         ]
@@ -37,6 +39,8 @@ const products = {
 
     "aluminum-wire": {
         name: "Aluminum Wire",
+        packType: "kg-pack",
+        packSize: 5,
         images: [
             "images/Aluminum wire.JPG"
         ]
@@ -48,6 +52,8 @@ const products = {
 
     "gloves-1": {
         name: "Gloves (1)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(1).JPG"
         ]
@@ -55,6 +61,8 @@ const products = {
     
     "gloves-2": {
         name: "Gloves (2)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(2).JPG"
         ]
@@ -62,6 +70,8 @@ const products = {
 
     "gloves-3": {
         name: "Gloves (3)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(3).JPG"
         ]
@@ -69,6 +79,8 @@ const products = {
 
     "gloves-4": {
         name: "Gloves (4)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(4).JPG"
         ]
@@ -76,6 +88,8 @@ const products = {
 
     "gloves-5": {
         name: "Gloves (5)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(5).JPG"
         ]
@@ -83,6 +97,8 @@ const products = {
 
     "gloves-6": {
         name: "Gloves (6)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(6).JPG"
         ]
@@ -90,6 +106,8 @@ const products = {
 
     "gloves-7": {
         name: "Gloves (7)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(7).JPG"
         ]
@@ -97,6 +115,8 @@ const products = {
 
     "gloves-8": {
         name: "Gloves (8)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(8).JPG"
         ]
@@ -104,6 +124,8 @@ const products = {
 
     "gloves-9": {
         name: "Gloves (9)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(9).JPG"
         ]
@@ -111,6 +133,8 @@ const products = {
 
     "gloves-10": {
         name: "Gloves (10)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(10).JPG"
         ]
@@ -118,6 +142,8 @@ const products = {
 
     "gloves-13": {
         name: "Gloves (13)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(13).JPG"
         ]
@@ -125,6 +151,8 @@ const products = {
 
     "gloves-14": {
         name: "Gloves (14)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(14).JPG"
         ]
@@ -132,6 +160,8 @@ const products = {
 
     "gloves-15": {
         name: "Gloves (15)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(15).JPG"
         ]
@@ -139,6 +169,8 @@ const products = {
 
     "gloves-16": {
         name: "Gloves (16)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(16).JPG"
         ]
@@ -146,6 +178,8 @@ const products = {
 
     "gloves-17": {
         name: "Gloves (17)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(17).JPG"
         ]
@@ -153,6 +187,8 @@ const products = {
 
     "gloves-19": {
         name: "Gloves (19)",
+        unitType: "dozen",
+        unitSize: 12,
         images: [
             "images/Gloves(19).JPG"
         ]

@@ -157,10 +157,16 @@ cart.forEach((item, index) => {
             <p>Quantity: ${item.quantity} Packs</p>
             <p>Total Weight: ${item.quantity * item.packSize} KG</p>
             `
+            : item.unitType === "dozen"
+            ? `
+            <p>Pack Type: Dozen</p>
+            <p>Quantity: ${item.quantity} Dozens</p>
+            <p>Total Pairs: ${item.quantity * item.unitSize} Pairs</p>
+            `
             : `
             <p class="qty-text">
                 Quantity: ${item.quantity}
-            </p> 
+            </p>
             `
             }
 
@@ -271,7 +277,7 @@ cart.forEach(item => {
 
     }
 
-    if (item.packSize) {
+if (item.packSize) {
 
     message +=
         " Pack Size: " +
@@ -285,6 +291,19 @@ cart.forEach(item => {
         " Total Weight: " +
         (item.quantity * item.packSize) +
         " KG\n\n";
+
+} else if (item.unitType === "dozen") {
+
+    message +=
+        " Pack Type: Dozen\n" +
+
+        " Quantity: " +
+        item.quantity +
+        " Dozens\n" +
+
+        " Total Pairs: " +
+        (item.quantity * item.unitSize) +
+        " Pairs\n\n";
 
 } else {
 
