@@ -170,3 +170,10 @@ nav{
 }
 
 }
+
+/* Hide the back button on mobile only */
+@media (max-width: 768px) {
+    .back-btn {
+        display: none;
+    }
+}
