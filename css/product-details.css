@@ -247,3 +247,10 @@
 
     box-shadow: 0 10px 24px rgba(139, 28, 28, 0.35);
 }
+
+/* Successful add-to-cart feedback */
+#orderBtn.added-to-cart {
+    background-color: #267547;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}

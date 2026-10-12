@@ -92,38 +92,58 @@ if (product) {
 /*                ADD TO CART SYSTEM                 */
 /* ================================================= */
 
-    document.getElementById("orderBtn")
-        .addEventListener("click", () => {
+const orderBtn = document.getElementById("orderBtn");
+const originalOrderBtnText = orderBtn.textContent.trim();
+let orderBtnTimeout;
 
-        const quantity =
-        document.getElementById("quantity").value;
+orderBtn.addEventListener("click", () => {
 
-        let cart =
-            JSON.parse(localStorage.getItem("cart")) || [];
+    const quantity = document.getElementById("quantity").value;
 
-        cart.push({
-            name: product.name,
-            image: document.getElementById("mainImage").src,
-            option:
-                productKey === "calcium-carbide"
-                    ? document.getElementById("productOption").value
-                    : "",
-            quantity: quantity,
-            packSize:
-                productKey === "copper-wire" ||
-                productKey === "aluminum-wire"
-                    ? 5
-                    : null,
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            unitType: product.unitType || null,
-            unitSize: product.unitSize || null
-        });
+    cart.push({
+        name: product.name,
+        image: document.getElementById("mainImage").src,
+        option:
+            productKey === "calcium-carbide"
+                ? document.getElementById("productOption").value
+                : "",
+        quantity: quantity,
+        packSize:
+            productKey === "copper-wire" ||
+            productKey === "aluminum-wire"
+                ? 5
+                : null,
+        unitType: product.unitType || null,
+        unitSize: product.unitSize || null
+    });
 
-        localStorage.setItem(
-            "cart",
-            JSON.stringify(cart)
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // تحديث عداد السلة إن كان موجودًا
+    const cartLink = document.getElementById("cartLink");
+
+    if (cartLink) {
+        const totalQuantity = cart.reduce(
+            (total, item) => total + Number(item.quantity),
+            0
         );
 
-    });   
+        cartLink.textContent = "السلة (" + totalQuantity + ")";
+    }
+
+    // إظهار تأكيد الإضافة
+    orderBtn.textContent = "تمت الإضافة إلى السلة ✓";
+    orderBtn.classList.add("added-to-cart");
+
+    clearTimeout(orderBtnTimeout);
+
+    orderBtnTimeout = setTimeout(() => {
+        orderBtn.textContent = originalOrderBtnText;
+        orderBtn.classList.remove("added-to-cart");
+    }, 2000);
+
+}); 
     
 }
